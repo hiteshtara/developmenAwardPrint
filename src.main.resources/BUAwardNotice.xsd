@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://printing.award.kc.kuali.bu.edu/awardnotice" targetNamespace="http://printing.award.kc.kuali.bu.edu/awardnotice" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:element name="AwardNotice" type="AwardNoticeType"></xs:element>
+    <xs:complexType name="AwardNoticeType">
+   		<xs:sequence>
+    		<xs:element name="BULogoPath" type="xs:string" maxOccurs="1" minOccurs="0">
+    		</xs:element><xs:element name="AwardHeader" type="AwardHeaderType" maxOccurs="1" minOccurs="1">
+    		</xs:element><xs:element name="ObligatedChangeHistory" type="ObligatedChangeHistoryType" maxOccurs="1" minOccurs="0">
+    		</xs:element><xs:element name="ObligatedAmountTotal" type="ObligatedAmountType" maxOccurs="1" minOccurs="0">
+    		</xs:element><xs:element name="AnticipatedAmountTotal" type="AnticipatedAmountType" maxOccurs="1" minOccurs="0">
+    		</xs:element><xs:element name="Comments" type="CommentsType" maxOccurs="1" minOccurs="0">
+    		</xs:element><xs:element name="TermsAndConditions" type="TermsAndConditionsType" maxOccurs="1" minOccurs="0">
+    		</xs:element><xs:element name="ReportingRequirements" type="ReportingRequirementsType" maxOccurs="1" minOccurs="0">
+    		</xs:element>
+   		</xs:sequence>
+    </xs:complexType>
+
+	<xs:complexType name="AwardHeaderType">
+		<xs:sequence>
+			<xs:element name="AwardNumber" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="SequenceNumber" type="xs:int"
+				minOccurs="0" />
+			<xs:element name="AccountNumber" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="StatusDescription" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="TransactionDate" type="xs:date"
+				maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="TransactionType" type="xs:string"
+				maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="SAPGrantNumber" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="FundsCenterInfo"
+				type="FundsCenterInfoType" maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="Investigators" type="AwardInvestigatorsType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Title" type="xs:string" minOccurs="0" />
+			<xs:element name="SponsorCode" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="SponsorDescription" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="PrimeSponsorCode" type="xs:string"
+				maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="PrimeSponsorDescription" type="xs:string"
+				maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="SponsorAwardNumber" type="xs:string"
+				maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="DepartmentAdminList" type="AdminsType"
+				maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="OSPAdminList" type="AdminsType"
+				maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="PAFOAdminList" type="AdminsType" maxOccurs="1" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InvestigatorUnitsType">
+		<xs:sequence>
+			<xs:element name="AwardNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="SequenceNumber" type="xs:int" minOccurs="0"/>
+			<xs:element name="PersonId" type="xs:string" minOccurs="0"/>
+			<xs:element name="UnitNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="UnitName" type="xs:string" minOccurs="0"/>
+			<xs:element name="LeadUnit" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="OSPAdminName" type="xs:string" minOccurs="0"/>
+			<xs:element name="AdministrativeOfficer" type="xs:string" nillable="true" minOccurs="0"/>
+			<xs:element name="AdministrativeOfficerName" type="xs:string" nillable="true" minOccurs="0"/>
+			<xs:element name="UnitHead" type="xs:string" nillable="true" minOccurs="0"/> 
+			<xs:element name="UnitHeadName" type="xs:string" nillable="true" minOccurs="0"/>
+			<xs:element name="DeanVp" type="xs:string" nillable="true" minOccurs="0"/> 
+			<xs:element name="DeanVpName" type="xs:string" nillable="true" minOccurs="0"/> 
+			<xs:element name="OtherIndividualToNotify" type="xs:string" nillable="true" minOccurs="0"/> 
+			<xs:element name="OtherIndividualToNotifyName" type="xs:string" nillable="true" minOccurs="0"/> 
+
+                        <xs:element name="UnitAdministrator" minOccurs = "0" maxOccurs="unbounded">
+		          <xs:complexType>
+				<xs:sequence>
+					<xs:element name="UnitAdministratorTypeCode" type="xs:int" nillable="true" minOccurs="0"/>
+					<xs:element name="Administrator" type="xs:string" nillable="true" minOccurs="0"/> 
+					<xs:element name="AdministratorName" type="xs:string" nillable="true" minOccurs="0"/>					
+				</xs:sequence>
+			  </xs:complexType>
+			</xs:element> 
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InvestigatorType">
+		<xs:sequence maxOccurs="1" minOccurs="0">
+			<xs:element name="PersonId" type="xs:string" minOccurs="0" />
+			<xs:element name="PersonName" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="PrincipalInvestigator" type="xs:boolean"
+				minOccurs="0" />
+			<xs:element name="PersonAddress" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="NonEmployee" type="xs:boolean"
+				minOccurs="0" />
+			<xs:element name="Faculty" type="xs:boolean" minOccurs="0" />
+			<xs:element name="PercentEffort" type="xs:decimal"
+				minOccurs="0" />
+			<xs:element name="Role" type="xs:string" maxOccurs="1"
+				minOccurs="0">
+			</xs:element>
+			<xs:sequence><xs:element name="InvestigatorUnit" type="InvestigatorUnitsType" minOccurs="0" maxOccurs="unbounded" /></xs:sequence>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="FundsCenterInfoType">
+		<xs:sequence>
+			<xs:element name="Address1" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+			<xs:element name="Address2" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+			<xs:element name="Address3" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+            <xs:element name="City" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+            <xs:element name="State" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+			<xs:element name="Country" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+			<xs:element name="Zipcode" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+			<xs:element name="Phone" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+			<xs:element name="Email" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+
+	<xs:complexType name="ObligatedChangeType">
+    	<xs:sequence>
+    		<xs:element name="InetrnalOrderNumber" type="xs:string"></xs:element>
+    		<xs:element name="Description" type="xs:string"></xs:element>
+    		<xs:element name="LegacySourceNumber" type="xs:string"></xs:element>
+    		<xs:element name="PI" type="xs:string"></xs:element>
+    		<xs:element name="FnARate" type="xs:double"></xs:element>
+    		<xs:element name="ObligatedChangeDirect" type="xs:double"></xs:element>
+    		<xs:element name="ObligatedChangeIndirect"
+    			type="xs:double">
+    		</xs:element>
+    		<xs:element name="TotalChange" type="xs:double"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ObligatedAmountType">
+    	<xs:sequence>
+    		<xs:element name="ObligationStartDate" type="xs:date"></xs:element>
+            <xs:element name="ObligatedEndDate" type="xs:date"></xs:element>
+            <xs:element name="ObligatedDirectTotal" type="xs:double"></xs:element>
+    		<xs:element name="ObligatedIndirectTotal"
+    			type="xs:double">
+    		</xs:element>
+    		<xs:element name="ObligatedTotal" type="xs:double"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AnticipatedAmountType">
+    	<xs:sequence>
+    		<xs:element name="ProjectStartDate" type="xs:date"></xs:element>
+    		<xs:element name="AnticipatedDirectTotal"
+    			type="xs:double">
+    		</xs:element>
+    		<xs:element name="AnticipatedIndirectTotal"
+    			type="xs:double">
+    		</xs:element>
+    		<xs:element name="AnticipatedTotal" type="xs:double"></xs:element>
+    		<xs:element name="ProjectEndDate" type="xs:date"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TermsAndConditionsType">
+    	<xs:sequence>
+    		<xs:element name="TermAndCondition" type="TermAndConditionType" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ReportingRequirementsType">
+    	<xs:sequence>
+    		<xs:element name="ReportingRequirement" type="ReportingRequirementType" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AdminType">
+    	<xs:sequence>
+    		<xs:element name="Name" type="xs:string"></xs:element>
+    		<xs:element name="Phone" type="xs:string"></xs:element>
+    		<xs:element name="Email" type="xs:string"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AwardInvestigatorsType">
+    <xs:sequence>
+		<xs:element name="Investigator" type="InvestigatorType" minOccurs="0" maxOccurs="unbounded"/>
+	</xs:sequence>				
+    </xs:complexType>
+
+
+    <xs:complexType name="CommentsType">
+    	<xs:sequence>
+    		<xs:element name="Comment" type="CommentType" minOccurs="0"	maxOccurs="unbounded">
+    		</xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ObligatedChangeHistoryType">
+    	<xs:sequence>
+    		<xs:element name="ObligatedChange"
+    			type="ObligatedChangeType" maxOccurs="unbounded" minOccurs="0">
+    		</xs:element>
+    		<xs:element name="FnARateTotal" type="xs:double"
+    			maxOccurs="1" minOccurs="0">
+    		</xs:element>
+    		<xs:element name="ObligatedChangeDirectTotal"
+    			type="xs:double" maxOccurs="1" minOccurs="0">
+    		</xs:element>
+    		<xs:element name="ObligatedChangeIndrectTotal"
+    			type="xs:double" maxOccurs="1" minOccurs="0">
+    		</xs:element>
+    		<xs:element name="TotalChangeTotal" type="xs:double" maxOccurs="1" minOccurs="0"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TermAndConditionType">
+    	<xs:sequence>
+    		<xs:element name="TermType" type="xs:string" maxOccurs="1"
+    			minOccurs="0">
+    		</xs:element>
+            <xs:element name="Terms" maxOccurs="1" minOccurs="0" type="TermsType">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ReportingRequirementType">
+    	<xs:sequence>
+    		<xs:element name="ReportType" type="xs:string"></xs:element>
+    		<xs:element name="Frequency" type="xs:string"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DepartmentAdminsType">
+    	<xs:sequence>
+    		<xs:element name="AdminType" type="xs:string"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="OSPAdminsType"></xs:complexType>
+
+    <xs:complexType name="PAFOAdminsType"></xs:complexType>
+
+
+    <xs:complexType name="AdminsType">
+    	<xs:sequence>
+    		<xs:element name="Admin" type="AdminType" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+
+
+
+
+    <xs:complexType name="CommentType">
+    	<xs:sequence>
+    		<xs:element name="CommentTxt" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TermsType">
+    	<xs:sequence>
+    		<xs:element name="Term" maxOccurs="unbounded" minOccurs="0" type="TermTxtType"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TermTxtType">
+    	<xs:sequence>
+    		<xs:element name="TermTxt" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+</xs:schema>

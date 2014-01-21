@@ -1,0 +1,145 @@
+<awar:AwardNotice xmlns:awar="http://printing.award.kc.kuali.bu.edu/awardnotice">
+	<awar:AwardHeader>
+		<awar:AwardNumber>000023-00001</awar:AwardNumber>
+		<awar:AccountNumber xsi:nil="true"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		<awar:TransactionDate xsi:nil="true"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		<awar:TransactionType>New</awar:TransactionType>
+		<awar:SAPGrantNumber>000023-00001</awar:SAPGrantNumber>
+		<awar:FundsCenterInfo>
+			<awar:Address1>000001</awar:Address1>
+		</awar:FundsCenterInfo>
+		<awar:Investigators>
+			<awar:Investigator>
+				<awar:PersonName>Inez Chew</awar:PersonName>
+			</awar:Investigator>
+		</awar:Investigators>
+		<awar:Title>test</awar:Title>
+		<awar:SponsorDescription>000100</awar:SponsorDescription>
+		<awar:PrimeSponsorDescription xsi:nil="true"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		<awar:SponsorAwardNumber xsi:nil="true"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		<awar:DepartmentAdminList />
+		<awar:OSPAdminList>
+			<awar:Admin>
+				<awar:Name>Geoff McGregor</awar:Name>
+				<awar:Phone>321-321-1197</awar:Phone>
+				<awar:Email>quickstart@yourschool.edu</awar:Email>
+			</awar:Admin>
+		</awar:OSPAdminList>
+		<awar:PAFOAdminList />
+	</awar:AwardHeader>
+	<awar:ObligatedChangeHistory>
+		<awar:FnARateTotal>0.0</awar:FnARateTotal>
+		<awar:ObligatedChangeDirectTotal>0.0</awar:ObligatedChangeDirectTotal>
+		<awar:ObligatedChangeIndrectTotal>0.0
+		</awar:ObligatedChangeIndrectTotal>
+		<awar:TotalChangeTotal>0.0</awar:TotalChangeTotal>
+	</awar:ObligatedChangeHistory>
+	<awar:ObligatedAmountTotal>
+		<awar:ObligationStartDate>2013-12-01-05:00</awar:ObligationStartDate>
+		<awar:ObligatedEndDate>2013-12-31-05:00</awar:ObligatedEndDate>
+		<awar:ObligatedDirectTotal>0.0</awar:ObligatedDirectTotal>
+		<awar:ObligatedIndirectTotal>0.0</awar:ObligatedIndirectTotal>
+		<awar:ObligatedTotal>0.0</awar:ObligatedTotal>
+	</awar:ObligatedAmountTotal>
+	<awar:AnticipatedAmountTotal>
+		<awar:ProjectStartDate xsi:nil="true"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		<awar:AnticipatedDirectTotal>0.0</awar:AnticipatedDirectTotal>
+		<awar:AnticipatedIndirectTotal>0.0</awar:AnticipatedIndirectTotal>
+		<awar:AnticipatedTotal>0.0</awar:AnticipatedTotal>
+		<awar:ProjectEndDate>2013-12-31-05:00</awar:ProjectEndDate>
+	</awar:AnticipatedAmountTotal>
+	<awar:Comments>
+		<awar:Comment>
+			<awar:CommentTxt>Copied Award</awar:CommentTxt>
+		</awar:Comment>
+		<awar:Comment>
+			<awar:CommentTxt xsi:nil="true"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		</awar:Comment>
+	</awar:Comments>
+	<awar:TermsAndConditions>
+		<awar:TermAndCondition>
+			<awar:TermType>3</awar:TermType>
+			<awar:Terms>
+				<awar:Term>
+					<awar:TermTxt>None</awar:TermTxt>
+				</awar:Term>
+			</awar:Terms>
+		</awar:TermAndCondition>
+		<awar:TermAndCondition>
+			<awar:TermType>2</awar:TermType>
+			<awar:Terms>
+				<awar:Term>
+					<awar:TermTxt>No Clause</awar:TermTxt>
+				</awar:Term>
+			</awar:Terms>
+		</awar:TermAndCondition>
+		<awar:TermAndCondition>
+			<awar:TermType>1</awar:TermType>
+			<awar:Terms>
+				<awar:Term>
+					<awar:TermTxt>No clause</awar:TermTxt>
+				</awar:Term>
+			</awar:Terms>
+		</awar:TermAndCondition>
+		<awar:TermAndCondition>
+			<awar:TermType>7</awar:TermType>
+			<awar:Terms>
+				<awar:Term>
+					<awar:TermTxt>No clause</awar:TermTxt>
+				</awar:Term>
+			</awar:Terms>
+		</awar:TermAndCondition>
+		<awar:TermAndCondition>
+			<awar:TermType>6</awar:TermType>
+			<awar:Terms>
+				<awar:Term>
+					<awar:TermTxt>None</awar:TermTxt>
+				</awar:Term>
+			</awar:Terms>
+		</awar:TermAndCondition>
+		<awar:TermAndCondition>
+			<awar:TermType>5</awar:TermType>
+			<awar:Terms>
+				<awar:Term>
+					<awar:TermTxt>No clause</awar:TermTxt>
+				</awar:Term>
+			</awar:Terms>
+		</awar:TermAndCondition>
+		<awar:TermAndCondition>
+			<awar:TermType>4</awar:TermType>
+			<awar:Terms>
+				<awar:Term>
+					<awar:TermTxt>No clause</awar:TermTxt>
+				</awar:Term>
+			</awar:Terms>
+		</awar:TermAndCondition>
+		<awar:TermAndCondition>
+			<awar:TermType>9</awar:TermType>
+			<awar:Terms>
+				<awar:Term>
+					<awar:TermTxt>No clause</awar:TermTxt>
+				</awar:Term>
+			</awar:Terms>
+		</awar:TermAndCondition>
+		<awar:TermAndCondition>
+			<awar:TermType>8</awar:TermType>
+			<awar:Terms>
+				<awar:Term>
+					<awar:TermTxt>No clause</awar:TermTxt>
+				</awar:Term>
+			</awar:Terms>
+		</awar:TermAndCondition>
+	</awar:TermsAndConditions>
+	<awar:ReportingRequirements>
+		<awar:ReportingRequirement>
+			<awar:ReportType>58</awar:ReportType>
+			<awar:Frequency>16</awar:Frequency>
+		</awar:ReportingRequirement>
+	</awar:ReportingRequirements>
+</awar:AwardNotice>

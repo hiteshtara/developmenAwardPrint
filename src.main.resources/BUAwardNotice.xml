@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<p:AwardNotice xmlns:p="http://printing.award.kc.kuali.bu.edu/awardnotice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://printing.award.kc.kuali.bu.edu/awardnotice BUAwardNotice.xsd ">
+
+  <p:BULogoPath>BULogo.png</p:BULogoPath>
+
+  <p:AwardHeader>
+
+    <p:AwardNumber>000123-00001</p:AwardNumber>
+
+    <p:AccountNumber>123123</p:AccountNumber>
+
+    <p:StatusDescription>Active</p:StatusDescription>
+
+    <p:TransactionDate>2013-01-01</p:TransactionDate>
+
+    <p:TransactionType>New</p:TransactionType>
+
+    <p:SAPGrantNumber>GNT123124</p:SAPGrantNumber>
+
+    <p:FundsCenterInfo>
+
+    	<p:Address1>BU Boston</p:Address1>
+
+    </p:FundsCenterInfo>
+
+    <p:Investigators>
+
+    	<p:Investigator>
+
+    		<p:PersonName>John Smith</p:PersonName>
+
+    		<p:Role>Investigator</p:Role>
+
+    	</p:Investigator>
+
+    	<p:Investigator>
+
+    		<p:PersonName>Mathew Paul</p:PersonName>
+
+    		<p:Role>Co Investigator</p:Role>
+
+    	</p:Investigator>
+
+    </p:Investigators>
+
+    <p:Title>A Great Award to print Notice of award</p:Title>
+
+    <p:SponsorCode>NIH</p:SponsorCode>
+
+    <p:SponsorDescription>NIH</p:SponsorDescription>
+
+    <p:PrimeSponsorCode>DOD</p:PrimeSponsorCode>
+
+    <p:PrimeSponsorDescription>DOD</p:PrimeSponsorDescription>
+
+    <p:SponsorAwardNumber>2234234</p:SponsorAwardNumber>
+
+    <p:DepartmentAdminList>
+
+    	<p:Admin>
+
+	    	<p:Name>Admin name1</p:Name>
+
+	    	<p:Phone>123-234-1234</p:Phone>
+
+	    	<p:Email>admin1@bu.edu</p:Email>
+
+    	</p:Admin>
+
+    </p:DepartmentAdminList>
+
+    <p:OSPAdminList>
+
+       	<p:Admin>
+
+	    	<p:Name>OSP Admin</p:Name>
+
+	    	<p:Phone>223-223-2233</p:Phone>
+
+	    	<p:Email>ospdmin@bu.edu</p:Email>
+
+    	</p:Admin>
+
+    </p:OSPAdminList>
+
+    <p:PAFOAdminList>
+
+    	<p:Admin>
+
+    		<p:Name>PAF Admin</p:Name>
+
+    		<p:Phone>333-333-3344</p:Phone>
+
+    		<p:Email>pafadmin@bu.edu</p:Email>
+
+    	</p:Admin>
+
+    </p:PAFOAdminList>
+
+  </p:AwardHeader>
+
+  <p:ObligatedChangeHistory>
+
+    <p:ObligatedChange>
+
+      <p:InetrnalOrderNumber>1232321232</p:InetrnalOrderNumber>
+
+      <p:Description>Award for 2013</p:Description>
+
+      <p:LegacySourceNumber>23234</p:LegacySourceNumber>
+
+      <p:PI>Mr. John Samuel</p:PI>
+
+      <p:FnARate>35.50</p:FnARate>
+
+      <p:ObligatedChangeDirect>10000.0</p:ObligatedChangeDirect>
+
+      <p:ObligatedChangeIndirect>10000.0</p:ObligatedChangeIndirect>
+
+      <p:TotalChange>20000.0</p:TotalChange>
+
+    </p:ObligatedChange>
+
+    <p:FnARateTotal>35.50</p:FnARateTotal>
+
+    <p:ObligatedChangeDirectTotal>10000.0</p:ObligatedChangeDirectTotal>
+
+    <p:ObligatedChangeIndrectTotal>10000.0</p:ObligatedChangeIndrectTotal>
+
+    <p:TotalChangeTotal>20000.0</p:TotalChangeTotal>
+
+  </p:ObligatedChangeHistory>
+
+  <p:ObligatedAmountTotal>
+
+    <p:ObligationStartDate>2013-01-01</p:ObligationStartDate>
+
+    <p:ObligatedEndDate>2013-12-31</p:ObligatedEndDate>
+
+    <p:ObligatedDirectTotal>10000.0</p:ObligatedDirectTotal>
+
+    <p:ObligatedIndirectTotal>10000.0</p:ObligatedIndirectTotal>
+
+    <p:ObligatedTotal>20000.0</p:ObligatedTotal>
+
+  </p:ObligatedAmountTotal>
+
+  <p:AnticipatedAmountTotal>
+
+    <p:ProjectStartDate>2013-01-01</p:ProjectStartDate>
+
+    <p:AnticipatedDirectTotal>10000.0</p:AnticipatedDirectTotal>
+
+    <p:AnticipatedIndirectTotal>10000.0</p:AnticipatedIndirectTotal>
+
+    <p:AnticipatedTotal>20000.0</p:AnticipatedTotal>
+
+    <p:ProjectEndDate>2013-12-31</p:ProjectEndDate>
+
+  </p:AnticipatedAmountTotal>
+
+  <p:Comments>
+
+    <p:Comment>
+
+		<p:CommentTxt>comment 1</p:CommentTxt>
+
+    </p:Comment>
+
+	<p:Comment>
+
+		<p:CommentTxt>comment 2</p:CommentTxt>
+
+	</p:Comment>
+
+  </p:Comments>
+
+  <p:TermsAndConditions>
+
+    <p:TermAndCondition>
+
+	    <p:TermType>Term Type 1</p:TermType>
+
+	    <p:Terms>
+
+	    	<p:Term>
+
+	    		<p:TermTxt>Term 1</p:TermTxt>
+
+	    	</p:Term>
+
+	    </p:Terms>
+
+    </p:TermAndCondition>
+
+    <p:TermAndCondition>
+
+    <p:TermType>Term Type 2</p:TermType>
+
+    <p:Terms>
+
+    	<p:Term>
+
+    		<p:TermTxt>Term 2</p:TermTxt>
+
+    	</p:Term>
+
+    	<p:Term>
+
+    		<p:TermTxt>Term 3</p:TermTxt>
+
+    	</p:Term>
+
+    </p:Terms>
+
+    </p:TermAndCondition>
+
+  </p:TermsAndConditions>
+
+  <p:ReportingRequirements>
+
+    <p:ReportingRequirement>
+
+      <p:ReportType>Report Type 1</p:ReportType>
+
+      <p:

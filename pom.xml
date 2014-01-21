@@ -38,10 +38,25 @@
 		<artifactId>MetaGrantApplication</artifactId>
 		<version>0.9.2-SNAPSHOT</version>                
 	</dependency>-->
+	<dependency>
+			<groupId>org.kuali.kra</groupId>
+			<artifactId>kc_project</artifactId>
+			<version>5.1.1</version>
+			<type>jar</type>
+			<classifier>classes</classifier>
+			<scope>provided</scope>
+		</dependency>
      <dependency>
          <groupId>xmlbeans</groupId>
          <artifactId>xmlbeans</artifactId>
          <version>2.2.0</version>
      </dependency>
+     
+        <dependency>
+            <groupId>org.kuali.rice</groupId>
+            <artifactId>rice-impl</artifactId>
+            <version>2.2.3</version>
+        </dependency>
     </dependencies>
+   
 </project>
